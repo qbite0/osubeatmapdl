@@ -1,5 +1,14 @@
 # osubeatmapdl
-A simple lib for node to download osu beatmaps.
+<a href="https://www.npmjs.com/package/osubeatmapdl"><img src="https://nodei.co/npm/osubeatmapdl.png" alt="npm package"></a>
+
+## About
+Simple node.js module for downloading osu beatmaps.
+
+## Installation
+**Node.js 4.0.0 or newer is required.**
+<br>`npm install osubeatmapdl`
+
+## Example:
 ```js
 const OSUBeatmapDL = require('osubeatmapdl');
 var osu = new OSUBeatmapDL.Account("username", "password");
