@@ -25,10 +25,13 @@ class OsuBeatmapDownloader {
       }
     }, (err, res, body) => {
       if (err) throw err;
-      var check = body.match(/You have specified an incorrect username/i);
+      var checkusername = body.match(/You have specified an incorrect username/i);
+      var checkpassword = body.match(/You have specified an incorrect password/i);
 
-      if (check) {
+      if (checkusername) {
         throw new Error('You have specified an incorrect username!');
+      } else if (checkpassword) {
+        throw new Error('You have specified an incorrect password!');
       } else {
         this.logged = true;
         console.log('Logged as', this.user);
