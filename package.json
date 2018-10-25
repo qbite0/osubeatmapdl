@@ -1,0 +1,26 @@
+{
+  "name": "osubeatmapdl",
+  "version": "0.1.0",
+  "description": "Simple osu beatmap downloader.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "osu",
+    "osugame",
+    "download",
+    "beatmap",
+    "file",
+    "fast",
+    "simple"
+  ],
+  "author": "qBite",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.88.0"
+  },
+  "engines": {
+    "node": ">= 4"
+  }
+}
